@@ -1,6 +1,138 @@
 @mixin SetFontFamaly(){
     font-family: Roboto;
 }
-span{
-    @include SetFontFamaly()
+.flex-container{
+    display: flex;
+    justify-content: center;
+    /*width: 1312px;*/
 }
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 1312px;
+}
+.first-section-header{
+    height: 63px;
+    border-bottom: 1px solid #DDE0E6;
+    span{
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+}
+
+.header__part{
+    display: flex;
+    align-items:center;
+}
+.header__part__1{
+    margin-left: 22.59px;
+}
+.header__part__3{
+    margin-left: 24px;
+    margin-right: 20px;
+} 
+.header__part__2{
+    margin-left: 20px;
+   
+} 
+.header__part>span{
+    margin-left: 23.79px;
+    font-family: "Roboto";
+}
+.second-section-header{
+   height: 48px;
+   span{
+       margin-left: 10px;
+       font-family: "Roboto";
+       font-style: normal;
+       font-weight: 500;
+       color:#6E7178;
+   }
+   span:nth-child(2n){
+       margin-left: 8px;
+   }
+}
+.sc-section-hr-img1{
+    margin-left: 32px;
+}
+.sc-section-hr-img2{
+margin-left: 18px;
+}
+.sc-section-hr-img3{
+    margin-left: 19px; 
+    width: 16px;
+    height: 20px;
+}
+.header__part22>span{
+    margin-right: 16px;
+}
+.sc-section-hr-img4p2 {
+    width: 16px;
+    height: 20px; 
+}
+.sc-section-hr-img5p2{
+    margin-left: 8.1px;
+    margin-right: 16px;
+}
+
+body{
+    margin: 0;
+    background-color: #F4F7FB;
+    .flex-container{
+        background-color: #fff;
+    }
+}
+
+.mainScreen{
+    display: flex;
+    justify-content: center;
+}
+.mainScreen__container{
+    width: 1248px;
+    background-color: #fff;
+    margin-top: 24px;
+    border:1px dotted;
+
+
+    
+}
+.mainscreen__container_line{
+    border:1px solid red;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-family: "Roboto";
+        font-size: 14px;
+        color:#6E7178 ;
+
+    }
+    .second__part__line{
+        display: flex;
+        align-items: center;
+    }
+    .mainScreen__line_span{
+        margin-left: 16px;
+        
+    }
+    .second__part__line__img2{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .second__part__line__img1{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .mainSreen__container__i{
+        display: flex;
+        justify-content:  center;
+        border-radius: 2px;
+    }
+
+}
+

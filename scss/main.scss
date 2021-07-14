@@ -1,0 +1,6 @@
+@mixin SetFontFamaly(){
+    font-family: Roboto;
+}
+span{
+    @include SetFontFamaly()
+}

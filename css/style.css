@@ -99,8 +99,113 @@ body .main-screen {
   justify-content: center;
   margin-top: 24px;
 }
+body .main-screen .post__descr__flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+body .main-screen .post__descr__flex .decsr__first__part span {
+  font-family: "Roboto";
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+body .main-screen .post__descr__flex .descr__second__part {
+  display: flex;
+  align-items: center;
+}
+body .main-screen .post__descr__flex .descr__second__part .second__part__divspan span {
+  font-family: "Roboto";
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #6E7178;
+}
+body .main-screen .tape__post {
+  border: 1px solid #DDE0E6;
+  background-color: #fff;
+}
+body .main-screen .tape__post .tape__post__img {
+  display: flex;
+  justify-content: center;
+}
+body .main-screen .tape__post .tape__post__img img {
+  border-radius: 2px;
+}
+body .main-screen .tape__post .tape__post__comment {
+  margin: 16px;
+}
+body .main-screen .tape__post .tape__post__comment .pre_comment__line {
+  display: flex;
+  align-items: center;
+}
+body .main-screen .tape__post .tape__post__comment .pre_comment__line span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+body .main-screen .tape__post .tape__post__comment .pre_comment__line span a {
+  text-decoration: none;
+  color: #2375E1;
+}
+body .main-screen .tape__post .tape__post__comment .post__comment__text {
+  border-left: 2px solid #C4C4C4;
+  padding-left: 16px;
+}
+body .main-screen .tape__post .tape__post__comment .post__comment__text p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+body .main-screen .tape__post .tape__post__comment .post__comment__text p:nth-child(1) {
+  color: #2D2F33;
+}
+body .main-screen .tape__post .tape__post__comment .post__comment__text p:nth-child(2) {
+  color: #6E7178;
+}
+body .main-screen .tape__post .tape__post__last-line {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+body .main-screen .tape__post .tape__post__last-line .last-line__first-part, body .main-screen .tape__post .tape__post__last-line .last_line__second-part {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+body .main-screen .tape__post .tape__post__last-line .last-line__first-part img {
+  margin-right: 8px;
+}
+body .main-screen .tape__post .tape__post__last-line .last-line__first-part span {
+  margin-right: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D2F33;
+}
+body .main-screen .tape__post .tape__post__last-line .last_line__second-part img {
+  margin-left: 8px;
+}
+body .main-screen .tape__post .tape__post__last-line .last_line__second-part a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6E7178;
+}
 body .main-screen .main-screen__inner {
-  border: 1px solid;
   /**/
   width: 1248px;
   display: flex;
@@ -109,13 +214,169 @@ body .main-screen .main-screen__inner {
 body .main-screen .main-screen__inner__first-section {
   width: 872px;
   margin-right: 24px;
-  border: 1px dotted;
-  /**/
+  /*11border:1px dotted;          /**/
+}
+body .main-screen .main-screen__inner__first-section a {
+  text-decoration: none;
+}
+body .main-screen .main-screen__inner__first-section .last__inscript {
+  border: 1px solid #DDE0E6;
+  background-color: #fff;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+body .main-screen .main-screen__inner__first-section .last__inscript .ins_first-part, body .main-screen .main-screen__inner__first-section .last__inscript .ins_second-part {
+  margin: 16px;
+}
+body .main-screen .main-screen__inner__first-section .last__inscript .ins_first-part span, body .main-screen .main-screen__inner__first-section .last__inscript .ins_second-part span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D2F33;
 }
 body .main-screen .main-screen__inner__personal {
   width: 352px;
-  border: 1px dotted;
-  /**/
+  /* border:1px dotted;          /**/
+}
+body .main-screen .main-screen__inner__personal .personal_data__content {
+  border: 1px solid #DDE0E6;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main-screen .main-screen__inner__personal .personal_data__content .NamePerson {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__content .NamePerson span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__content .profession span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #A1A5AE;
+}
+body .main-screen .main-screen__inner__personal .personal_data__content .vk_badges {
+  margin-top: 16px;
+  margin-bottom: 34px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav {
+  display: flex;
+  margin-top: 24px;
+  border: 1px solid #DDE0E6;
+  background-color: #fff;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav {
+  width: 352px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .first_section_nav {
+  padding: 12px;
+  border-bottom: 1px solid #DDE0E6;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .first_section_nav .nav_bar {
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .first_section_nav .nav_bar span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #DDE0E6;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element img {
+  margin-left: 24px;
+  margin-right: 16px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection .nav_list__element {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection .nav_list__element img {
+  margin-left: 24px;
+  margin-right: 16px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection .nav_list__element span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+body .main-screen .personal_data__lastSection {
+  border: 1px solid #DDE0E6;
+  background-color: #fff;
+  margin-top: 24px;
+}
+body .main-screen .personal_data__lastSection .pdlsc__navBar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DDE0E6;
+}
+body .main-screen .personal_data__lastSection .pdlsc__navBar span {
+  margin: 12px;
+  margin-left: 24px;
+  margin-top: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+body .main-screen .personal_data__lastSection .pdlsc__navBar img {
+  margin-right: 24px;
+}
+body .main-screen .personal_data__lastSection .pdlsc__input {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DDE0E6;
+  /*textarea::plac*/
+}
+body .main-screen .personal_data__lastSection .pdlsc__input textarea {
+  font-size: 14;
+  width: 256px;
+  height: 110px;
+  border-radius: 0px 0px 2px 2px;
+  background: #FFFFFF;
+  border: 1px solid #DDE0E6;
+  padding-top: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  resize: none;
+  font-family: "Roboto";
 }
 
 /*# sourceMappingURL=style.css.map */

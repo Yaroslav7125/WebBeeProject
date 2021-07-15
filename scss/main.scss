@@ -1,5 +1,6 @@
-@mixin SetFontFamaly(){
-    font-family: Roboto;
+@mixin SetborderAndbgc(){
+    border: 1px solid #DDE0E6;
+    background-color: #fff;
 }
 .flex-container{
     display: flex;
@@ -89,28 +90,325 @@ body{
         display: flex;
         justify-content: center;
         margin-top:24px;
+        .post__descr__flex{
+            display: flex;
+            justify-content:space-between;
+            padding: 16px;
+            .decsr__first__part{
+                span {
+                    font-family: "Roboto";
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .descr__second__part{
+                display: flex;
+                align-items: center;
+                .second__part__divspan{
+                        
+                        span{
+                            font-family: "Roboto" ;
+                            margin-left: 16px;
+                        margin-right: 16px;
+                        color: #6E7178;
+                        }
+                }
+            }
+        }
+        .tape__post{
+            
+            @include SetborderAndbgc();
+            .tape__post__img{
+                img{
+                    border-radius: 2px;
+
+                }
+                display: flex;
+                justify-content: center;
+            }
+            .tape__post__comment{
+                margin:16px;
+                .pre_comment__line{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-left: 8px;
+                        margin-right: 8px;
+                        a{
+                            text-decoration: none;
+                            color: #2375E1;
+                        }
+
+                    }
+                }
+                .post__comment__text{
+                    border-left:2px solid #C4C4C4; 
+                    padding-left: 16px;
+                    
+                    p{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    p:nth-child(1){
+                                
+                                color: #2D2F33;
+
+                     }   
+                     p:nth-child(2){
+                        color: #6E7178;
+                     }
+                    
+                }
+                
+                
+            }
+            .tape__post__last-line{
+                display: flex;
+                justify-content: space-between;
+                margin-left: 16px;
+                margin-right: 16px;
+                .last-line__first-part, .last_line__second-part{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                }
+                .last-line__first-part{
+                    img{
+                        margin-right: 8px;
+
+                    }
+                    span{
+                        margin-right: 16px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #2D2F33;
+                    }
+                }
+                .last_line__second-part{
+                    img{
+                        margin-left: 8px; 
+                    }
+                    a{
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #6E7178
+                    }
+                }
+                
+            }
+        }
         
         .main-screen__inner{
-            border:1px solid;                   /**/
+                             /**/
             width: 1248px;
             display: flex;
             align-items: flex-start;
         }
         .main-screen__inner__first-section{                           
             width: 872px;               
-            margin-right: 24px;            
-            border:1px dotted;          /**/
+            margin-right: 24px;  
+            a{
+                text-decoration: none;
+            }          
+            /*11border:1px dotted;          /**/
+            .last__inscript{
+                @include SetborderAndbgc();
+                margin-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                .ins_first-part, .ins_second-part{
+                       margin: 16px;  
+                       span{
+                            
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #2D2F33;
+                       }   
+                }
+
+            }
+            
 
         }  
         .main-screen__inner__personal{                           
             width: 352px;               
-                          
-            border:1px dotted;          /**/
-        }  
-        
+             .personal_data__content{
+                 @include SetborderAndbgc();
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 .NamePerson{
+                        margin-top: 16px;
+                        margin-bottom: 8px;
+                        span{
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+
+                 }
+                 .profession{
+                     span{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #A1A5AE;
+                     }
+                 }
+                 .vk_badges{
+                     margin-top: 16px;
+                     margin-bottom: 34px;
+                 }
+
+                }
+                .personal_data__nav{
+                    display: flex;
+                    margin-top:24px; 
+                    @include SetborderAndbgc();
+                    .personal_nav{
+                        width: 352px;
+                        .first_section_nav{
+                            padding: 12px;
+                            border-bottom: 1px solid #DDE0E6;
+                            .nav_bar{
+                                margin-left: 12px;
+                                margin-right: 12px;
+                                display:flex;
+                                justify-content: space-between;
+                                span{
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+                            
+                        }
+                        .nav_list__ftSection{
+                            display: flex;
+                            flex-direction: column;
+                            border-bottom: 1px solid #DDE0E6;
+
+                            .nav_list__element{
+                                display: flex;
+                                align-items: center;
+                                height: 56px;
+                                img{
+                                    margin-left: 24px;
+                                    margin-right: 16px;
+                                }
+                                span{
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+
+
+                        }
+                        .nav_list__sdSection{
+                            .nav_list__element{
+                                display: flex;
+                                align-items: center;
+                                height: 56px;
+                                img{
+                                    margin-left: 24px;
+                                    margin-right: 16px;
+                                }
+                                span{
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+
+               /* border:1px dotted;          /**/
+            }  
+
+        .personal_data__lastSection{
+            @include SetborderAndbgc();
+            margin-top: 24px;
+            .pdlsc__navBar{
+                display: flex;
+                justify-content: space-between;
+                
+                border-bottom: 1px solid #DDE0E6;
+                span{
+                    margin: 12px;
+                    margin-left: 24px;
+                    margin-top: 8px;
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                }
+                img{
+                    margin-right: 24px;
+                }
+            }
+            .pdlsc__input{
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 24px;
+                border-bottom: 1px solid  #DDE0E6;
+                textarea{
+                   
+                    font-size: 14;
+                    width: 256px;
+                    height: 110px;
+                    border-radius: 0px 0px 2px 2px;
+                    background: #FFFFFF;
+                    border: 1px solid #DDE0E6;
+                    padding-top: 12px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    resize:none;
+                    font-family: "Roboto";
+                }
+                /*textarea::plac*/
+            }
+        }
 
     }
 
 }
+
 
 

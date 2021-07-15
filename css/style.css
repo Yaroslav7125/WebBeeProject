@@ -248,6 +248,9 @@ body .main-screen .main-screen__inner__personal .personal_data__content {
   flex-direction: column;
   align-items: center;
 }
+body .main-screen .main-screen__inner__personal .personal_data__content .imgblock img {
+  margin-top: 32px;
+}
 body .main-screen .main-screen__inner__personal .personal_data__content .NamePerson {
   margin-top: 16px;
   margin-bottom: 8px;

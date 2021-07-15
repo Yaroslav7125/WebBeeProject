@@ -258,6 +258,11 @@ body{
                  display: flex;
                  flex-direction: column;
                  align-items: center;
+                 .imgblock{
+                     img{
+                         margin-top: 32px;
+                     }
+                 }
                  .NamePerson{
                         margin-top: 16px;
                         margin-bottom: 8px;

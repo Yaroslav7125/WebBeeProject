@@ -314,11 +314,12 @@ body{
                             display: flex;
                             flex-direction: column;
                             border-bottom: 1px solid #DDE0E6;
-
+                            
                             .nav_list__element{
                                 display: flex;
                                 align-items: center;
                                 height: 56px;
+                               
                                 img{
                                     margin-left: 24px;
                                     margin-right: 16px;
@@ -330,15 +331,94 @@ body{
                                     font-size: 16px;
                                     line-height: 24px;
                                 }
+                                .div-balance {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
                             }
+                            #balance{
+                                   display: flex;
+                                   align-items: center; 
+                                   justify-content: space-between;
+                                   
+                            }
+                            #balance>span{
+                                margin-right: 24px;
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #A1A5AE;
+                           }
+                           #Connections1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-right: 24px;
+                                .Connections_count{
+                                    display: flex;
+                                    justify-content: center;
+                                    background-color: #EF4115;
+                                    border-radius: 8px;
+                                    width: 23px;
+                                    height: 16px;
+                                    align-items: center;
+                                    
+                                    span {
+                                        font-family: Roboto;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 13px;
+                                        margin-left: 4px;
+                                        margin-right: 4px;
+                                        
+                                        color: #FFFFFF;
+                                    }
+                                    
+                                }
+                           }
+                           
+                          
+
 
 
                         }
                         .nav_list__sdSection{
+                            #Connections2{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-right: 24px;
+                                .Connections_count{
+                                    display: flex;
+                                    justify-content: center;
+                                    background-color: #26A69A;
+                                    border-radius: 8px;
+                                    width: 23px;
+                                    height: 16px;
+                                    align-items: center;
+                                    
+                                    span {
+                                        font-family: Roboto;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 13px;
+                                        margin-left: 4px;
+                                        margin-right: 4px;
+                                        
+                                        color: #FFFFFF;
+                                    }
+                                }
+
+                            }
+
                             .nav_list__element{
                                 display: flex;
                                 align-items: center;
                                 height: 56px;
+                                
                                 img{
                                     margin-left: 24px;
                                     margin-right: 16px;
@@ -350,14 +430,19 @@ body{
                                     font-size: 16px;
                                     line-height: 24px;
                                 }
+                                
                             }
+                            
+                           
                         }
+
                     }
                     
                 }
 
                /* border:1px dotted;          /**/
             }  
+            
 
         .personal_data__lastSection{
             @include SetborderAndbgc();
@@ -409,6 +494,7 @@ body{
     }
 
 }
+
 
 
 

@@ -318,6 +318,72 @@ body .main-screen .main-screen__inner__personal .personal_data__nav .personal_na
   font-size: 16px;
   line-height: 24px;
 }
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element .div-balance {
+  display: flex;
+  align-items: center;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #balance > span {
+  margin-right: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #A1A5AE;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #Connections1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #Connections1 .Connections_count {
+  display: flex;
+  justify-content: center;
+  background-color: #EF4115;
+  border-radius: 8px;
+  width: 23px;
+  height: 16px;
+  align-items: center;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #Connections1 .Connections_count span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #FFFFFF;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection #Connections2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 24px;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection #Connections2 .Connections_count {
+  display: flex;
+  justify-content: center;
+  background-color: #26A69A;
+  border-radius: 8px;
+  width: 23px;
+  height: 16px;
+  align-items: center;
+}
+body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection #Connections2 .Connections_count span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #FFFFFF;
+}
 body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection .nav_list__element {
   display: flex;
   align-items: center;

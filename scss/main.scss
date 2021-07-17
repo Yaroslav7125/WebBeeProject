@@ -1,5 +1,5 @@
 
-@mixin SetborderAndbgc(){
+@mixin SetborderAndBColor(){
     border: 1px solid #DDE0E6;
     background-color: #fff;
 }
@@ -121,7 +121,7 @@ body{
         }
         .tape-post{
             
-            @include SetborderAndbgc();
+            @include SetborderAndBColor();
             .tape-post-img{
                 img{
                     border-radius: 2px;
@@ -231,7 +231,7 @@ body{
             }          
             /*11border:1px dotted;          /**/
             .last-inscript{
-                @include SetborderAndbgc();
+                @include SetborderAndBColor();
                 margin-top: 24px;
                 display: flex;
                 justify-content: space-between;
@@ -255,7 +255,7 @@ body{
         .main-screen-inner-personal{                           
             width: 352px;               
              .personal-data-content{
-                 @include SetborderAndbgc();
+                 @include SetborderAndBColor();
                  display: flex;
                  flex-direction: column;
                  align-items: center;
@@ -295,7 +295,7 @@ body{
                 .personal-data-nav{
                     display: flex;
                     margin-top:24px; 
-                    @include SetborderAndbgc();
+                    @include SetborderAndBColor();
                     .personal-nav{
                         width: 352px;
                         .first-section-nav{
@@ -451,7 +451,7 @@ body{
             
 
         .personal-data-lastSection{
-            @include SetborderAndbgc();
+            @include SetborderAndBColor();
             margin-top: 24px;
             .pdlsc-navBar{
                 display: flex;

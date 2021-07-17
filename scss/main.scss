@@ -6,7 +6,7 @@
 .flex-container{
     display: flex;
     justify-content: center;
-    /*width: 1312px;*/
+    
 }
 .flex{
     display:flex;
@@ -29,22 +29,23 @@
 .header-part{
     display: flex;
     align-items:center;
+    span{
+        margin-left: 23.79px;
+        font-family: "Roboto";
+    }
 }
-.header-part-1{
+.header-part-1img{
     margin-left: 22.59px;
 }
-.header-part-3{
+.header-part-3img{
     margin-left: 24px;
     margin-right: 20px;
 } 
-.header-part-2{
+.header-part-2img{
     margin-left: 20px;
    
 } 
-.header-part>span{
-    margin-left: 23.79px;
-    font-family: "Roboto";
-}
+
 .second-section-header{
    height: 48px;
    span{
@@ -219,12 +220,12 @@ body{
         
         .main-screen-inner{
                              /**/
-            width: 1248px;
+            max-width: 1248px;
             display: flex;
             align-items: flex-start;
         }
         .main-screen-inner-first-section{                           
-            width: 872px;               
+            max-width: 872px;               
             margin-right: 24px;  
             a{
                 text-decoration: none;

@@ -131,7 +131,7 @@ body .main-screen .tape-post .tape-post-img {
 }
 body .main-screen .tape-post .tape-post-img img {
   border-radius: 2px;
-  min-width: 100%;
+  min-width: 100px;
   max-width: 100%;
 }
 body .main-screen .tape-post .tape-post-comment {

@@ -1,3 +1,4 @@
+
 @mixin SetborderAndbgc(){
     border: 1px solid #DDE0E6;
     background-color: #fff;
@@ -25,22 +26,22 @@
     
 }
 
-.header__part{
+.header-part{
     display: flex;
     align-items:center;
 }
-.header__part__1{
+.header-part-1{
     margin-left: 22.59px;
 }
-.header__part__3{
+.header-part-3{
     margin-left: 24px;
     margin-right: 20px;
 } 
-.header__part__2{
+.header-part-2{
     margin-left: 20px;
    
 } 
-.header__part>span{
+.header-part>span{
     margin-left: 23.79px;
     font-family: "Roboto";
 }
@@ -68,7 +69,7 @@ margin-left: 18px;
     width: 16px;
     height: 20px;
 }
-.header__part22>span{
+.header-part22>span{
     margin-right: 16px;
 }
 .sc-section-hr-img4p2 {
@@ -90,11 +91,11 @@ body{
         display: flex;
         justify-content: center;
         margin-top:24px;
-        .post__descr__flex{
+        .post-descr-flex{
             display: flex;
             justify-content:space-between;
             padding: 16px;
-            .decsr__first__part{
+            .decsr-first-part{
                 span {
                     font-family: "Roboto";
                     font-family: Roboto;
@@ -104,10 +105,10 @@ body{
                     line-height: 20px;
                 }
             }
-            .descr__second__part{
+            .descr-second-part{
                 display: flex;
                 align-items: center;
-                .second__part__divspan{
+                .second-part-divspan{
                         
                         span{
                             font-family: "Roboto" ;
@@ -118,10 +119,10 @@ body{
                 }
             }
         }
-        .tape__post{
+        .tape-post{
             
             @include SetborderAndbgc();
-            .tape__post__img{
+            .tape-post-img{
                 img{
                     border-radius: 2px;
 
@@ -129,9 +130,9 @@ body{
                 display: flex;
                 justify-content: center;
             }
-            .tape__post__comment{
+            .tape-post-comment{
                 margin:16px;
-                .pre_comment__line{
+                .pre-comment-line{
                     display: flex;
                     align-items: center;
                     span{
@@ -149,7 +150,7 @@ body{
 
                     }
                 }
-                .post__comment__text{
+                .post-comment-text{
                     border-left:2px solid #C4C4C4; 
                     padding-left: 16px;
                     
@@ -173,17 +174,17 @@ body{
                 
                 
             }
-            .tape__post__last-line{
+            .tape-post-last-line{
                 display: flex;
                 justify-content: space-between;
                 margin-left: 16px;
                 margin-right: 16px;
-                .last-line__first-part, .last_line__second-part{
+                .last-line-first-part, .last-line-second-part{
                     display: flex;
                     align-items: center;
                     margin-bottom: 16px;
                 }
-                .last-line__first-part{
+                .last-line-first-part{
                     img{
                         margin-right: 8px;
 
@@ -198,7 +199,7 @@ body{
                         color: #2D2F33;
                     }
                 }
-                .last_line__second-part{
+                .last-line-second-part{
                     img{
                         margin-left: 8px; 
                     }
@@ -216,25 +217,25 @@ body{
             }
         }
         
-        .main-screen__inner{
+        .main-screen-inner{
                              /**/
             width: 1248px;
             display: flex;
             align-items: flex-start;
         }
-        .main-screen__inner__first-section{                           
+        .main-screen-inner-first-section{                           
             width: 872px;               
             margin-right: 24px;  
             a{
                 text-decoration: none;
             }          
             /*11border:1px dotted;          /**/
-            .last__inscript{
+            .last-inscript{
                 @include SetborderAndbgc();
                 margin-top: 24px;
                 display: flex;
                 justify-content: space-between;
-                .ins_first-part, .ins_second-part{
+                .ins-first-part, .ins-second-part{
                        margin: 16px;  
                        span{
                             
@@ -251,9 +252,9 @@ body{
             
 
         }  
-        .main-screen__inner__personal{                           
+        .main-screen-inner-personal{                           
             width: 352px;               
-             .personal_data__content{
+             .personal-data-content{
                  @include SetborderAndbgc();
                  display: flex;
                  flex-direction: column;
@@ -285,22 +286,22 @@ body{
                         color: #A1A5AE;
                      }
                  }
-                 .vk_badges{
+                 .vk-badges{
                      margin-top: 16px;
                      margin-bottom: 34px;
                  }
 
                 }
-                .personal_data__nav{
+                .personal-data-nav{
                     display: flex;
                     margin-top:24px; 
                     @include SetborderAndbgc();
-                    .personal_nav{
+                    .personal-nav{
                         width: 352px;
-                        .first_section_nav{
+                        .first-section-nav{
                             padding: 12px;
                             border-bottom: 1px solid #DDE0E6;
-                            .nav_bar{
+                            .nav-bar{
                                 margin-left: 12px;
                                 margin-right: 12px;
                                 display:flex;
@@ -315,12 +316,12 @@ body{
                             }
                             
                         }
-                        .nav_list__ftSection{
+                        .nav-list-ftSection{
                             display: flex;
                             flex-direction: column;
                             border-bottom: 1px solid #DDE0E6;
                             
-                            .nav_list__element{
+                            .nav-list-element{
                                 display: flex;
                                 align-items: center;
                                 height: 56px;
@@ -362,7 +363,7 @@ body{
                                 align-items: center;
                                 justify-content: space-between;
                                 margin-right: 24px;
-                                .Connections_count{
+                                .Connections-count{
                                     display: flex;
                                     justify-content: center;
                                     background-color: #EF4115;
@@ -390,13 +391,13 @@ body{
 
 
                         }
-                        .nav_list__sdSection{
+                        .nav-list-sdSection{
                             #Connections2{
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
                                 margin-right: 24px;
-                                .Connections_count{
+                                .Connections-count{
                                     display: flex;
                                     justify-content: center;
                                     background-color: #26A69A;
@@ -419,7 +420,7 @@ body{
 
                             }
 
-                            .nav_list__element{
+                            .nav-list-element{
                                 display: flex;
                                 align-items: center;
                                 height: 56px;
@@ -449,10 +450,10 @@ body{
             }  
             
 
-        .personal_data__lastSection{
+        .personal-data-lastSection{
             @include SetborderAndbgc();
             margin-top: 24px;
-            .pdlsc__navBar{
+            .pdlsc-navBar{
                 display: flex;
                 justify-content: space-between;
                 
@@ -472,7 +473,7 @@ body{
                     margin-right: 24px;
                 }
             }
-            .pdlsc__input{
+            .pdlsc-input{
                 margin-top: 15px;
                 display: flex;
                 justify-content: center;

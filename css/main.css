@@ -22,25 +22,25 @@
   font-weight: 400;
 }
 
-.header__part {
+.header-part {
   display: flex;
   align-items: center;
 }
 
-.header__part__1 {
+.header-part-1 {
   margin-left: 22.59px;
 }
 
-.header__part__3 {
+.header-part-3 {
   margin-left: 24px;
   margin-right: 20px;
 }
 
-.header__part__2 {
+.header-part-2 {
   margin-left: 20px;
 }
 
-.header__part > span {
+.header-part > span {
   margin-left: 23.79px;
   font-family: "Roboto";
 }
@@ -73,7 +73,7 @@
   height: 20px;
 }
 
-.header__part22 > span {
+.header-part22 > span {
   margin-right: 16px;
 }
 
@@ -99,12 +99,12 @@ body .main-screen {
   justify-content: center;
   margin-top: 24px;
 }
-body .main-screen .post__descr__flex {
+body .main-screen .post-descr-flex {
   display: flex;
   justify-content: space-between;
   padding: 16px;
 }
-body .main-screen .post__descr__flex .decsr__first__part span {
+body .main-screen .post-descr-flex .decsr-first-part span {
   font-family: "Roboto";
   font-family: Roboto;
   font-style: normal;
@@ -112,35 +112,35 @@ body .main-screen .post__descr__flex .decsr__first__part span {
   font-size: 14px;
   line-height: 20px;
 }
-body .main-screen .post__descr__flex .descr__second__part {
+body .main-screen .post-descr-flex .descr-second-part {
   display: flex;
   align-items: center;
 }
-body .main-screen .post__descr__flex .descr__second__part .second__part__divspan span {
+body .main-screen .post-descr-flex .descr-second-part .second-part-divspan span {
   font-family: "Roboto";
   margin-left: 16px;
   margin-right: 16px;
   color: #6E7178;
 }
-body .main-screen .tape__post {
+body .main-screen .tape-post {
   border: 1px solid #DDE0E6;
   background-color: #fff;
 }
-body .main-screen .tape__post .tape__post__img {
+body .main-screen .tape-post .tape-post-img {
   display: flex;
   justify-content: center;
 }
-body .main-screen .tape__post .tape__post__img img {
+body .main-screen .tape-post .tape-post-img img {
   border-radius: 2px;
 }
-body .main-screen .tape__post .tape__post__comment {
+body .main-screen .tape-post .tape-post-comment {
   margin: 16px;
 }
-body .main-screen .tape__post .tape__post__comment .pre_comment__line {
+body .main-screen .tape-post .tape-post-comment .pre-comment-line {
   display: flex;
   align-items: center;
 }
-body .main-screen .tape__post .tape__post__comment .pre_comment__line span {
+body .main-screen .tape-post .tape-post-comment .pre-comment-line span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -149,42 +149,42 @@ body .main-screen .tape__post .tape__post__comment .pre_comment__line span {
   margin-left: 8px;
   margin-right: 8px;
 }
-body .main-screen .tape__post .tape__post__comment .pre_comment__line span a {
+body .main-screen .tape-post .tape-post-comment .pre-comment-line span a {
   text-decoration: none;
   color: #2375E1;
 }
-body .main-screen .tape__post .tape__post__comment .post__comment__text {
+body .main-screen .tape-post .tape-post-comment .post-comment-text {
   border-left: 2px solid #C4C4C4;
   padding-left: 16px;
 }
-body .main-screen .tape__post .tape__post__comment .post__comment__text p {
+body .main-screen .tape-post .tape-post-comment .post-comment-text p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
 }
-body .main-screen .tape__post .tape__post__comment .post__comment__text p:nth-child(1) {
+body .main-screen .tape-post .tape-post-comment .post-comment-text p:nth-child(1) {
   color: #2D2F33;
 }
-body .main-screen .tape__post .tape__post__comment .post__comment__text p:nth-child(2) {
+body .main-screen .tape-post .tape-post-comment .post-comment-text p:nth-child(2) {
   color: #6E7178;
 }
-body .main-screen .tape__post .tape__post__last-line {
+body .main-screen .tape-post .tape-post-last-line {
   display: flex;
   justify-content: space-between;
   margin-left: 16px;
   margin-right: 16px;
 }
-body .main-screen .tape__post .tape__post__last-line .last-line__first-part, body .main-screen .tape__post .tape__post__last-line .last_line__second-part {
+body .main-screen .tape-post .tape-post-last-line .last-line-first-part, body .main-screen .tape-post .tape-post-last-line .last-line-second-part {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
-body .main-screen .tape__post .tape__post__last-line .last-line__first-part img {
+body .main-screen .tape-post .tape-post-last-line .last-line-first-part img {
   margin-right: 8px;
 }
-body .main-screen .tape__post .tape__post__last-line .last-line__first-part span {
+body .main-screen .tape-post .tape-post-last-line .last-line-first-part span {
   margin-right: 16px;
   font-family: Roboto;
   font-style: normal;
@@ -193,10 +193,10 @@ body .main-screen .tape__post .tape__post__last-line .last-line__first-part span
   line-height: 20px;
   color: #2D2F33;
 }
-body .main-screen .tape__post .tape__post__last-line .last_line__second-part img {
+body .main-screen .tape-post .tape-post-last-line .last-line-second-part img {
   margin-left: 8px;
 }
-body .main-screen .tape__post .tape__post__last-line .last_line__second-part a {
+body .main-screen .tape-post .tape-post-last-line .last-line-second-part a {
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
@@ -205,31 +205,31 @@ body .main-screen .tape__post .tape__post__last-line .last_line__second-part a {
   line-height: 20px;
   color: #6E7178;
 }
-body .main-screen .main-screen__inner {
+body .main-screen .main-screen-inner {
   /**/
   width: 1248px;
   display: flex;
   align-items: flex-start;
 }
-body .main-screen .main-screen__inner__first-section {
+body .main-screen .main-screen-inner-first-section {
   width: 872px;
   margin-right: 24px;
   /*11border:1px dotted;          /**/
 }
-body .main-screen .main-screen__inner__first-section a {
+body .main-screen .main-screen-inner-first-section a {
   text-decoration: none;
 }
-body .main-screen .main-screen__inner__first-section .last__inscript {
+body .main-screen .main-screen-inner-first-section .last-inscript {
   border: 1px solid #DDE0E6;
   background-color: #fff;
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
 }
-body .main-screen .main-screen__inner__first-section .last__inscript .ins_first-part, body .main-screen .main-screen__inner__first-section .last__inscript .ins_second-part {
+body .main-screen .main-screen-inner-first-section .last-inscript .ins-first-part, body .main-screen .main-screen-inner-first-section .last-inscript .ins-second-part {
   margin: 16px;
 }
-body .main-screen .main-screen__inner__first-section .last__inscript .ins_first-part span, body .main-screen .main-screen__inner__first-section .last__inscript .ins_second-part span {
+body .main-screen .main-screen-inner-first-section .last-inscript .ins-first-part span, body .main-screen .main-screen-inner-first-section .last-inscript .ins-second-part span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -237,32 +237,32 @@ body .main-screen .main-screen__inner__first-section .last__inscript .ins_first-
   line-height: 20px;
   color: #2D2F33;
 }
-body .main-screen .main-screen__inner__personal {
+body .main-screen .main-screen-inner-personal {
   width: 352px;
   /* border:1px dotted;          /**/
 }
-body .main-screen .main-screen__inner__personal .personal_data__content {
+body .main-screen .main-screen-inner-personal .personal-data-content {
   border: 1px solid #DDE0E6;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .main-screen .main-screen__inner__personal .personal_data__content .imgblock img {
+body .main-screen .main-screen-inner-personal .personal-data-content .imgblock img {
   margin-top: 32px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__content .NamePerson {
+body .main-screen .main-screen-inner-personal .personal-data-content .NamePerson {
   margin-top: 16px;
   margin-bottom: 8px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__content .NamePerson span {
+body .main-screen .main-screen-inner-personal .personal-data-content .NamePerson span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__content .profession span {
+body .main-screen .main-screen-inner-personal .personal-data-content .profession span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -270,67 +270,67 @@ body .main-screen .main-screen__inner__personal .personal_data__content .profess
   line-height: 20px;
   color: #A1A5AE;
 }
-body .main-screen .main-screen__inner__personal .personal_data__content .vk_badges {
+body .main-screen .main-screen-inner-personal .personal-data-content .vk-badges {
   margin-top: 16px;
   margin-bottom: 34px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav {
+body .main-screen .main-screen-inner-personal .personal-data-nav {
   display: flex;
   margin-top: 24px;
   border: 1px solid #DDE0E6;
   background-color: #fff;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav {
   width: 352px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .first_section_nav {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .first-section-nav {
   padding: 12px;
   border-bottom: 1px solid #DDE0E6;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .first_section_nav .nav_bar {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .first-section-nav .nav-bar {
   margin-left: 12px;
   margin-right: 12px;
   display: flex;
   justify-content: space-between;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .first_section_nav .nav_bar span {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .first-section-nav .nav-bar span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #DDE0E6;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection .nav-list-element {
   display: flex;
   align-items: center;
   height: 56px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element img {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection .nav-list-element img {
   margin-left: 24px;
   margin-right: 16px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element span {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection .nav-list-element span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection .nav_list__element .div-balance {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection .nav-list-element .div-balance {
   display: flex;
   align-items: center;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #balance {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection #balance {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #balance > span {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection #balance > span {
   margin-right: 24px;
   font-family: Roboto;
   font-style: normal;
@@ -339,13 +339,13 @@ body .main-screen .main-screen__inner__personal .personal_data__nav .personal_na
   line-height: 20px;
   color: #A1A5AE;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #Connections1 {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection #Connections1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 24px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #Connections1 .Connections_count {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection #Connections1 .Connections-count {
   display: flex;
   justify-content: center;
   background-color: #EF4115;
@@ -354,7 +354,7 @@ body .main-screen .main-screen__inner__personal .personal_data__nav .personal_na
   height: 16px;
   align-items: center;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__ftSection #Connections1 .Connections_count span {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-ftSection #Connections1 .Connections-count span {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -363,13 +363,13 @@ body .main-screen .main-screen__inner__personal .personal_data__nav .personal_na
   margin-right: 4px;
   color: #FFFFFF;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection #Connections2 {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-sdSection #Connections2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 24px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection #Connections2 .Connections_count {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-sdSection #Connections2 .Connections-count {
   display: flex;
   justify-content: center;
   background-color: #26A69A;
@@ -378,7 +378,7 @@ body .main-screen .main-screen__inner__personal .personal_data__nav .personal_na
   height: 16px;
   align-items: center;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection #Connections2 .Connections_count span {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-sdSection #Connections2 .Connections-count span {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -387,33 +387,33 @@ body .main-screen .main-screen__inner__personal .personal_data__nav .personal_na
   margin-right: 4px;
   color: #FFFFFF;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection .nav_list__element {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-sdSection .nav-list-element {
   display: flex;
   align-items: center;
   height: 56px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection .nav_list__element img {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-sdSection .nav-list-element img {
   margin-left: 24px;
   margin-right: 16px;
 }
-body .main-screen .main-screen__inner__personal .personal_data__nav .personal_nav .nav_list__sdSection .nav_list__element span {
+body .main-screen .main-screen-inner-personal .personal-data-nav .personal-nav .nav-list-sdSection .nav-list-element span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
-body .main-screen .personal_data__lastSection {
+body .main-screen .personal-data-lastSection {
   border: 1px solid #DDE0E6;
   background-color: #fff;
   margin-top: 24px;
 }
-body .main-screen .personal_data__lastSection .pdlsc__navBar {
+body .main-screen .personal-data-lastSection .pdlsc-navBar {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #DDE0E6;
 }
-body .main-screen .personal_data__lastSection .pdlsc__navBar span {
+body .main-screen .personal-data-lastSection .pdlsc-navBar span {
   margin: 12px;
   margin-left: 24px;
   margin-top: 8px;
@@ -423,10 +423,10 @@ body .main-screen .personal_data__lastSection .pdlsc__navBar span {
   font-size: 16px;
   line-height: 24px;
 }
-body .main-screen .personal_data__lastSection .pdlsc__navBar img {
+body .main-screen .personal-data-lastSection .pdlsc-navBar img {
   margin-right: 24px;
 }
-body .main-screen .personal_data__lastSection .pdlsc__input {
+body .main-screen .personal-data-lastSection .pdlsc-input {
   margin-top: 15px;
   display: flex;
   justify-content: center;
@@ -434,7 +434,7 @@ body .main-screen .personal_data__lastSection .pdlsc__input {
   border-bottom: 1px solid #DDE0E6;
   /*textarea::plac*/
 }
-body .main-screen .personal_data__lastSection .pdlsc__input textarea {
+body .main-screen .personal-data-lastSection .pdlsc-input textarea {
   font-size: 14;
   width: 256px;
   height: 110px;

@@ -104,7 +104,6 @@ body .main-screen .post-descr-flex {
 }
 body .main-screen .post-descr-flex .decsr-first-part span {
   font-family: "Roboto";
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -123,6 +122,8 @@ body .main-screen .post-descr-flex .descr-second-part .second-part-divspan span 
 body .main-screen .tape-post {
   border: 1px solid #DDE0E6;
   background-color: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 body .main-screen .tape-post .tape-post-img {
   display: flex;
@@ -130,6 +131,8 @@ body .main-screen .tape-post .tape-post-img {
 }
 body .main-screen .tape-post .tape-post-img img {
   border-radius: 2px;
+  min-width: 100%;
+  max-width: 100%;
 }
 body .main-screen .tape-post .tape-post-comment {
   margin: 16px;

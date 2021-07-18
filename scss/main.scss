@@ -78,7 +78,7 @@ margin-left: 18px;
     height: 20px; 
 }
 .sc-section-hr-img5p2{
-    margin-left: 8.1px;
+    margin-left: 8px;
     margin-right: 16px;
 }
 
@@ -224,9 +224,10 @@ body{
         
         .main-screen-inner{
                              /**/
-            max-width: 1248px;
+            /* max-width: 1248px; */
             display: flex;
             align-items: flex-start;
+            justify-content: space-between;
         }
         .main-screen-inner-first-section{                           
             max-width: 872px;               
@@ -258,7 +259,7 @@ body{
 
         }  
         .main-screen-inner-personal{                           
-            width: 352px;               
+                          
              .personal-data-content{
                  @include SetborderAndBColor();
                  display: flex;
@@ -302,7 +303,7 @@ body{
                     margin-top:24px; 
                     @include SetborderAndBColor();
                     .personal-nav{
-                        width: 352px;
+                        width: 100%;
                         .first-section-nav{
                             padding: 12px;
                             border-bottom: 1px solid #DDE0E6;
@@ -479,15 +480,15 @@ body{
                 }
             }
             .pdlsc-input{
-                margin-top: 15px;
+               
                 display: flex;
                 justify-content: center;
-                padding-bottom: 24px;
+                
                 border-bottom: 1px solid  #DDE0E6;
                 textarea{
-                   
+                    margin: 24px 24px;
                     font-size: 14;
-                    width: 256px;
+                    min-width: 256px;
                     height: 110px;
                     border-radius: 0px 0px 2px 2px;
                     background: #FFFFFF;

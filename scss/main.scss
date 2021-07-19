@@ -17,7 +17,10 @@
 .first-section-header{
     height: 63px;
     border-bottom: 1px solid #DDE0E6;
+    font-family: "Roboto";
+    text-decoration: none;
     span{
+        text-decoration: none;
         font-family: "Roboto";
         font-size: 16px;
         font-style: normal;
@@ -29,10 +32,14 @@
 .header-part{
     display: flex;
     align-items:center;
-    span{
-        margin-left: 23.79px;
-        font-family: "Roboto";
+    a{
+        span{
+            margin-left: 23.79px;
+            font-family: "Roboto";
+            text-decoration: none;
+        }
     }
+    
 }
 .header-part-1img{
     margin-left: 22.59px;

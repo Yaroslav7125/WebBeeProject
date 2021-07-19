@@ -50,22 +50,43 @@ let callFucnk = ()=>{
 
 divElem = document.querySelector(".nav");
 console.log(divElem);       /*отладка*/
-
+content = document.getElementById('content')
 
 
 
 function Router(ThePath){
     switch(ThePath){
-        case '/':
-            return "TheMain";
-            break;
+
+        /* case '/':
+            history.pushState(null, null, ThePath)
+            content.innerHTML = "TheMain";
+            break; */
         case '/map':
-            return TheMap;
+            history.pushState(null, null, ThePath)
+            content.innerHTML = 'TheMap';
             break;
-        case '/activyty':
-            return "TheActivity"
+        case '/activity':
+            history.pushState(null, null, ThePath)
+            content.innerHTML = "TheActivity";
             break;
+        case '/time':
+            history.pushState(null, null, ThePath)
+            content.innerHTML = "theTime";
+            break;    
     };  
 }
+Router(location.pathname);
 
-divElem.
+divElem.addEventListener('click', function(e){
+    e.preventDefault();
+    
+    if(e.target.tagName!=="A")return;
+    let path = e.target.getAttribute("href");
+    Router(path);    
+});
+window.addEventListener('popstate',function(){
+    console.log(location.pathname);
+
+    Router(location.pathname); 
+    
+});

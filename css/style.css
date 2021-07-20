@@ -28,9 +28,9 @@
   display: flex;
   align-items: center;
 }
-.header-part a span {
+.header-part span a {
   margin-left: 23.79px;
-  font-family: "Roboto";
+  font-family: Roboto;
   text-decoration: none;
 }
 
@@ -454,6 +454,18 @@ body .main-screen .personal-data-lastSection .pdlsc-input textarea {
 
 .header {
   font-family: Roboto;
+}
+
+.timer-div {
+  border: 1px solid #DDE0E6;
+  background-color: #fff;
+  min-width: 1248px;
+  flex-direction: column;
+  height: 100%;
+}
+.timer-div .timer-div-content {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

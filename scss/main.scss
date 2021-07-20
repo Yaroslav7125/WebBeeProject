@@ -32,10 +32,10 @@
 .header-part{
     display: flex;
     align-items:center;
-    a{
-        span{
+    span{
+        a{
             margin-left: 23.79px;
-            font-family: "Roboto";
+            font-family: Roboto;
             text-decoration: none;
         }
     }
@@ -518,6 +518,17 @@ body{
     font-family: Roboto;
 }
 
-
+.timer-div{
+    @include SetborderAndBColor();
+    min-width: 1248px;
+    flex-direction: column;
+    
+    height: 100%;
+    .timer-div-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
 
 

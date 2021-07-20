@@ -62,27 +62,31 @@ function Router(ThePath){
             content.innerHTML = "TheMain";
             break; */
         case '/map':
-            history.pushState(null, null, ThePath)
+            //history.pushState(null, null, ThePath)
             content.innerHTML = 'TheMap';
             break;
         case '/activity':
-            history.pushState(null, null, ThePath)
+            //history.pushState(null, null, ThePath)
             content.innerHTML = "TheActivity";
             break;
         case '/time':
-            history.pushState(null, null, ThePath)
+            
             content.innerHTML = "theTime";
             break;    
     };  
+    console.log(ThePath);
 }
-Router(location.pathname);
+//Router(location.pathname);
 
 divElem.addEventListener('click', function(e){
-    e.preventDefault();
+    
     
     if(e.target.tagName!=="A")return;
+    
     let path = e.target.getAttribute("href");
-    Router(path);    
+    history.pushState(null, null, path);
+    Router(path);  
+    e.preventDefault();  
 });
 window.addEventListener('popstate',function(){
     console.log(location.pathname);
@@ -90,3 +94,8 @@ window.addEventListener('popstate',function(){
     Router(location.pathname); 
     
 });
+
+
+
+
+

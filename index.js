@@ -55,6 +55,19 @@ function GetContent(ThePath){
         case '/map.html':
             //history.pushState(null, null, ThePath)
             makeGetRequest(`${location.origin}/templates${ThePath}`);
+            document.addEventListener("DOMContentLoaded", ()=>
+            {
+                var map;
+
+                DG.then(function () {
+                map = DG.map('map', {
+                center: [54.98, 82.89],
+                zoom: 13
+        });
+    });
+            }
+
+            );
             break;
 
         case '/activity.html':
@@ -85,6 +98,47 @@ window.addEventListener('popstate',function(){
     GetContent(location.pathname); 
     
 });
+///////////////////////////////////timer
+let int_timer = [0,0,0];
+
+let sec = 0;
+let hours = 0;
+let minutes = 0;
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    if(document.getElementById('timer') != null){
+        document.getElementById('timer').innerHTML =  `${hours}:${minutes}:${sec}`;
+    }
+});
+
+showTime = function(){
+    
+    if(sec==60){sec=0; minutes +=1;}
+    if(minutes==60){minute=0;hours+=1};
+    sec+=1;
+    if(document.getElementById('timer') != null){
+        document.getElementById('timer').innerHTML =  `${hours}:${minutes}:${sec}`;
+    }
+    
+}
+
+
+
+
+function Timer(){
+    
+    
+    let timerId = setInterval(()=> showTime(), 1000);
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", Timer);
+
+/////////////////////////////////////map
+
+
 
 
 

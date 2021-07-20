@@ -34,7 +34,7 @@
     align-items:center;
     span{
         a{
-            margin-left: 23.79px;
+            
             font-family: Roboto;
             text-decoration: none;
         }
@@ -520,15 +520,46 @@ body{
 
 .timer-div{
     @include SetborderAndBColor();
-    min-width: 1248px;
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
     
     height: 100%;
+    width: 1248px;
+    padding-top:16px;
+    padding-left: 16px;
     .timer-div-content{
         display: flex;
         flex-direction: column;
+        align-content: space-around;
+        span{
+            margin-bottom: 16px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #2D2F33;
+
+        }
         
     }
 }
+
+.main-main-screen{
+    display: flex;
+    justify-content: center;
+    .main-screen{
+        display: flex;
+        
+    }
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    color: #2375E1;
+    border-bottom:3px solid #2375E1;
+}
+
 
 

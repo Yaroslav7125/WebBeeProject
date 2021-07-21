@@ -32,17 +32,20 @@
 .header-part{
     display: flex;
     align-items:center;
-    span{
+    
+    
         a{
-            
+            margin-left: 22.59px;
+            display: flex;
             font-family: Roboto;
             text-decoration: none;
+            .span{
+                
+                margin-left: 23px;
+            }
         }
-    }
     
-}
-.header-part-1img{
-    margin-left: 22.59px;
+    
 }
 .header-part-3img{
     margin-left: 24px;

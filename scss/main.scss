@@ -99,6 +99,7 @@ body{
         display: flex;
         justify-content: center;
         margin-top:24px;
+        width: 100%;
         .post-descr-flex{
             display: flex;
             justify-content:space-between;
@@ -234,10 +235,13 @@ body{
             /* max-width: 1248px; */
             display: flex;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: center;
+            flex-shrink: 2;
+            width: 100%;
         }
         .main-screen-inner-first-section{                           
-            max-width: 872px;               
+            //max-width: 872px;  
+            width: 100%;             
             margin-right: 24px;  
             a{
                 text-decoration: none;
@@ -547,6 +551,7 @@ body{
 .main-main-screen{
     display: flex;
     justify-content: center;
+    width: 100%;
     .main-screen{
         display: flex;
         
@@ -563,3 +568,26 @@ a:hover{
 
 
 
+///// map section
+
+.map-container{
+    @include SetborderAndBColor();
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    .map-container-div{
+        flex-shrink: 1; 
+        width: 100%;           
+        span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 16px;
+        }
+        .the-map{
+            margin-top: 16px;
+        }
+    }
+}

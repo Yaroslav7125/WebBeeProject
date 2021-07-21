@@ -31,6 +31,7 @@ content = document.getElementById('content') // div элемент куда вс
 const ShowContent = data => {
     console.log(data);
     content.innerHTML = data;
+    showTime();
 }
 let makeGetRequest = (uri, cb) =>{
     let xhttp = new XMLHttpRequest();
@@ -115,7 +116,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 showTime = function(){
-    
+    if (document.getElementById('timer') == null)return;
     if(sec==60){sec=0; minutes +=1;}
     if(minutes==60){minute=0;hours+=1};
     sec+=1;
@@ -129,8 +130,6 @@ showTime = function(){
 
 
 function Timer(){
-    
-    
     let timerId = setInterval(()=> showTime(), 1000);
 }
 
@@ -139,20 +138,6 @@ function Timer(){
 
 document.addEventListener("DOMContentLoaded", Timer);
 
-/////////////////////////////////////map
-// document.addEventListener("DOMContentLoaded", ()=>
-//             {
-//                 var map;
-
-//                 DG.then(function () {
-//                 map = DG.map('map', {
-//                 center: [54.98, 82.89],
-//                 zoom: 13
-//         });
-//     });
-//             }
-
-//             );
 
 
 

@@ -217,7 +217,7 @@ body .main-screen .main-screen-inner {
   align-items: flex-start;
   justify-content: center;
   flex-shrink: 2;
-  width: 100%;
+  width: 1248px;
 }
 body .main-screen .main-screen-inner-first-section {
   width: 100%;
@@ -462,9 +462,8 @@ body .main-screen .personal-data-lastSection .pdlsc-input textarea {
   border: 1px solid #DDE0E6;
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
   height: 100%;
-  width: 1248px;
+  width: 100%;
   padding-top: 16px;
   padding-left: 16px;
 }

@@ -237,7 +237,7 @@ body{
             align-items: flex-start;
             justify-content: center;
             flex-shrink: 2;
-            width: 100%;
+            width:1248px;
         }
         .main-screen-inner-first-section{                           
             //max-width: 872px;  
@@ -525,10 +525,10 @@ body{
 .timer-div{
     @include SetborderAndBColor();
     display: flex;
-    justify-content: space-between;
+    
     
     height: 100%;
-    width: 1248px;
+    width: 100%;
     padding-top:16px;
     padding-left: 16px;
     .timer-div-content{

@@ -29,7 +29,6 @@ divElem = document.querySelector(".nav"); // navbar в котором наход
 content = document.getElementById('content') // div элемент куда вставляется контент
 
 const ShowContent = data => {
-    console.log(data);
     content.innerHTML = data;
     showTime();
 }
@@ -62,13 +61,20 @@ function GetContent(ThePath){
             //history.pushState(null, null, ThePath)
             makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => {
                 ShowContent(data); // тогда вызываем функцию myFunction
-
+                
                 
                 DG.then(function() {
                     map = DG.map('map', {
                         'center': [54.98, 82.89],
-                        'zoom': 13
+                        'zoom': 17
                     });
+                    navigator.geolocation.getCurrentPosition((pos)=>{
+                        coord = pos.coords;
+                        DG.marker([coord.latitude, coord.longitude]).addTo(map);
+                        // map.flyTo([coord.latitude,coord.longitude],13);
+                        map.setView([coord.latitude,coord.longitude],17);
+                    });
+                    
                 });
             });
             

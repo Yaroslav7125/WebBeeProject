@@ -20,6 +20,7 @@
     font-family: "Roboto";
     text-decoration: none;
     span{
+        margin-left: 23px;
         text-decoration: none;
         font-family: "Roboto";
         font-size: 16px;
@@ -35,13 +36,13 @@
     
     
         a{
-            margin-left: 22.59px;
+           
             display: flex;
             font-family: Roboto;
             text-decoration: none;
             .span{
                 
-                margin-left: 23px;
+               
             }
         }
     
@@ -523,6 +524,9 @@ body{
 
 .header{
     font-family: Roboto;
+    a{
+        color: #6E7178;
+    }
 }
 
 .timer-div{

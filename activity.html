@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrrM6t1dS36jnMhuDCOtu7_hq328mz188&callback=initMap"></script>
+
+    
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="flex-container ">
+        <div class="header first-section-header flex">
+        
+            <div class="header-part">
+                <a href="#"><img class="header-part-1img" src="./img/stroke.svg" alt=""><span>User Pages</span></a>
+                
+            </div>
+            <div class="header-part">
+                <img class="header-part-2img" src="./img/small_bell.svg" alt="">
+                <img class="header-part-3img" src="./img/User.svg" alt="">
+            </div>  
+            
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="header second-section-header flex">
+            <div class="header-part header-part21 nav">
+                
+                <img class = "sc-section-hr-img1" id ="Activity" src="./img/Activity.svg" alt="">
+                <span><a href="/activity.html">Activity</a></span>
+                <img class = "sc-section-hr-img2" src="./img/Calendar.svg" alt="">
+                <span><a href="/map.html">Map</a></span>
+                <img class = "sc-section-hr-img3" src="./img/Gear.svg" alt="">
+                <span> <a href="/time.html">Time</a></span>
+    
+            </div>
+            <div class="header-part header-part22">
+                <img class = "sc-section-hr-img1p2" src="./img/List.svg" alt="">
+                <span>Notes</span>
+                <img class = "sc-section-hr-img2p2" src="./img/User.svg" alt="">
+                <span>Frends</span>
+                <img class = "sc-section-hr-img3p2" src="./img/User.svg" alt="">
+                <span>Photos</span>
+                <img class ="sc-section-hr-img4p2 img-gear" src="./img/Gear.svg" alt="">
+                <img class ="sc-section-hr-img5p2" src="./img/DownStroke.svg" alt="">
+          
+            </div>
+        </div>
+    </div>
+    <div class="main-main-screen">
+        <div class="main-screen">
+            <div class="main-screen-inner" id="content">
+                <div class="main-screen-inner-first-section tape"> <!-- левый блок -->
+                    <div class="tape-post">   <!-- описание поста -->
+                        <div class="tape-post-descr">
+                            <div class="post-descr-flex">
+                                <div class="decsr-first-part">
+                                    <span class = "mainScreen-line-span">Himalayan sunset</span>
+                                </div>
+                                <div class="descr-second-part">
+                                    <img class = "second-part-img1" src="./img/DoneBadge.svg" alt="">
+                                    <div class="second-part-divspan"><span class="second-part-span">49 minutes ago</span></div>
+                                    
+                                    <img class = "second-part-img2" src="./img/UpStroke.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tape-post-img">
+                            <img src="./img/SunsetImage.png" alt="">
+                        </div>
+                        <div class="tape-post-comment">
+                            <div class="pre-comment-line">
+                                <img src="./img/comment_line.svg" alt="">
+                                
+                                
+                                <span><a href="#">Kirill Dashkevich</a> commented:</span>
+                            </div>
+                            <div class="post-comment-text">
+                                <p class="comment-text">The sun disappearing behind the Himalayas. This was taken from near the Tungnath temple (~3500m) in the Garwhal Himalayas near Chopta. I think this is probably my favourite of all of the sunset photos</p>
+                                <p class="comment-decr">— Kirill, 10:39 am</p>
+                            </div>
+                
+                            
+                            
+                        </div>
+                        <div class="tape-post-last-line">
+                                <div class="last-line-first-part">
+                                    <img src="./img/eye.svg" alt="" class="eye">
+                                    <span class="eye-span">438</span>
+                                    <img src="./img/comment_line.svg" alt="" class="eye">
+                                    <span class="comment-span">71</span>
+                                </div>
+                                <div class="last-line-second-part">
+                                    
+                                    <a href="#">Read past</a>
+                                    <img src="./img/right_stroke.svg" alt="" class="read-post-img">
+                                </div>
+                        </div>
+                
+                    </div>
+                    <a href="#">
+                        <div class="last-inscript">
+                            <div class="ins-first-part">
+                                <span class="ins-text">Conservation with James</span>
+                            </div>
+                            <div class="ins-second-part">
+                                <img src="./img/DownStroke.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="main-screen-inner-personal personal-data"><!-- блок с персональной информацией -->
+                    <div class="personal-data-content">
+                        <div class="imgblock">
+                            <img src="./img/pain.svg" alt="">
+                        </div>
+                        <div class="NamePerson">
+                                <span>Harold Pain </span>                        
+                        </div>
+                        <div class="profession">
+                            <span>UX/UI designer</span>
+                        </div>
+                        <div class="vk-badges">
+                            <img src="./img/vk.svg" alt="" id = "vk-badges1" class="">
+                            <img src="./img/vk.svg" alt="" id = "vk-badges2" class="">
+                            <img src="./img/vk.svg" alt="" id = "vk-badges3" class="">
+                        </div>
+                    </div>
+                    <div class="personal-data-nav">
+                        <div class="personal-nav">
+                            <div class="first-section-nav">
+                                <div class="nav-bar">
+                                    <span>Navigation</span>
+                                    <img src="./img/DownStroke.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="nav-list">
+                                <div class="nav-list-ftSection">
+                                    <div class="nav-list-element">
+                                       
+                                            <img src="./img/User.svg" alt="">
+                                            <span>My profile</span> 
+                                    </div>
+                                    <div class="nav-list-element" id="balance">
+                                        <div class="div-balance">
+                                            <img src="./img/User.svg" alt="">
+                                            <span>Balance</span>
+                                        </div>
+                                        <span>$1,456</span>
+                
+                                        
+                                    </div>
+                                    <div class="nav-list-element"id = "Connections1">
+                                        <div>
+                                            <img src="./img/User.svg" alt="">
+                                            <span>Connections</span>
+                                        </div>
+                                        <div class="Connections-count">
+                                            <span id="Connections-count">
+                                                47
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-list-element">
+                                        <img src="./img/User.svg" alt="">
+                                        <span>Friends</span>
+                                    </div>   
+                                </div>
+                
+                                <div class="nav-list-sdSection">
+                                    <div class="nav-list-element" id = "Connections2">
+                                        <div>
+                                            <img src="./img/User.svg" alt="">
+                                            <span>Connections</span>
+                                        </div>
+                                        <div class="Connections-count">
+                                            <span id="Connections-count">
+                                                47
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="nav-list-element" >
+                                        
+                                            <img src="./img/User.svg" alt="">
+                                            <span>Account settings</span>
+                                        
+                                        
+                                    </div>
+                                </div>
+                
+                            </div>
+                            
+                        </div>
+                            
+                    </div>
+                    
+                    <div class="personal-data-lastSection">
+                        <div class="pdlsc-navBar">
+                            <span>Share your thoughts</span>
+                            <img src="./img/DownStroke.svg" alt="">
+                        </div>
+                        <div class="pdlsc-input">
+                            <textarea placeholder = "Enter your message..." type="text"></textarea>
+                        </div>
+                    </div>
+                
+                
+                    
+                </div> 
+            </div>
+            
+                
+            
+                
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full&lazy=true"></script>
+    
+</body>
+</html>

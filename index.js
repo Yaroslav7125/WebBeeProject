@@ -27,20 +27,25 @@ function getPath(str){
 ///----------------------------------------------------------------------
 divElem = document.querySelector(".nav"); // navbar в котором находятся ссылки
 content = document.getElementById('content') // div элемент куда вставляется контент
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){
-    console.log(`Status is ${this.status}`);
-    if(this.readyState==4&&this.status == 200){  // если ответ от сервера есть и он хороший - 20
-        ShowContent(this.responseText); // тогда вызываем функцию myFunction
-    }
-}
+
 const ShowContent = data => {
     console.log(data);
     content.innerHTML = data;
 }
-let makeGetRequest = uri =>{
+let makeGetRequest = (uri, cb) =>{
+    let xhttp = new XMLHttpRequest();
     xhttp.open("Get", uri);
     xhttp.send();
+
+    
+    xhttp.onreadystatechange = function(ev){
+        console.log(`Status is ${this.status}`);
+        if(this.readyState==4&&this.status == 200){  // если ответ от сервера есть и он хороший - 20
+            cb && cb(this.responseText);
+            // ShowContent(this.responseText); // тогда вызываем функцию myFunction
+        }
+    }
+
 }
 
 //-------------------------------------------------------------------------
@@ -50,32 +55,30 @@ function GetContent(ThePath){
     switch(ThePath){
 
          case '/':
-            makeGetRequest(`${location.origin}/templates${ThePath}activity.html`);
+            makeGetRequest(`${location.origin}/templates${ThePath}activity.html`, (data) => ShowContent(data));
             break; 
         case '/map.html':
             //history.pushState(null, null, ThePath)
-            makeGetRequest(`${location.origin}/templates${ThePath}`);
-            document.addEventListener("DOMContentLoaded", ()=>
-            {
-                var map;
+            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => {
+                ShowContent(data); // тогда вызываем функцию myFunction
 
-                DG.then(function () {
-                map = DG.map('map', {
-                center: [54.98, 82.89],
-                zoom: 13
-        });
-    });
-            }
-
-            );
+                
+                DG.then(function() {
+                    map = DG.map('map', {
+                        'center': [54.98, 82.89],
+                        'zoom': 13
+                    });
+                });
+            });
+            
             break;
 
         case '/activity.html':
             //history.pushState(null, null, ThePath)
-            makeGetRequest(`${location.origin}/templates${ThePath}`);
+            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => ShowContent(data));
             break;
         case '/time.html':
-            makeGetRequest(`${location.origin}/templates${ThePath}`);
+            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => ShowContent(data));
             break;    
     };  
     
@@ -137,6 +140,19 @@ function Timer(){
 document.addEventListener("DOMContentLoaded", Timer);
 
 /////////////////////////////////////map
+// document.addEventListener("DOMContentLoaded", ()=>
+//             {
+//                 var map;
+
+//                 DG.then(function () {
+//                 map = DG.map('map', {
+//                 center: [54.98, 82.89],
+//                 zoom: 13
+//         });
+//     });
+//             }
+
+//             );
 
 
 

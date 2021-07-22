@@ -17,7 +17,11 @@
 .first-section-header{
     height: 63px;
     border-bottom: 1px solid #DDE0E6;
+    font-family: "Roboto";
+    text-decoration: none;
     span{
+        margin-left: 23px;
+        text-decoration: none;
         font-family: "Roboto";
         font-size: 16px;
         font-style: normal;
@@ -29,13 +33,21 @@
 .header-part{
     display: flex;
     align-items:center;
-    span{
-        margin-left: 23.79px;
-        font-family: "Roboto";
-    }
-}
-.header-part-1img{
-    margin-left: 22.59px;
+    
+    
+        a{
+           
+            display: flex;
+            font-family: Roboto;
+            text-decoration: none;
+            padding:9px;
+            color: #6E7178;
+            /* img{
+                margin-right: 8px;
+            } */
+        }
+    
+    
 }
 .header-part-3img{
     margin-left: 24px;
@@ -59,14 +71,10 @@
        margin-left: 8px;
    }
 }
-.sc-section-hr-img1{
-    margin-left: 32px;
-}
-.sc-section-hr-img2{
-margin-left: 18px;
-}
+
+
 .sc-section-hr-img3{
-    margin-left: 19px; 
+     
     width: 16px;
     height: 20px;
 }
@@ -92,6 +100,7 @@ body{
         display: flex;
         justify-content: center;
         margin-top:24px;
+        width: 100%;
         .post-descr-flex{
             display: flex;
             justify-content:space-between;
@@ -227,10 +236,13 @@ body{
             /* max-width: 1248px; */
             display: flex;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: center;
+            flex-shrink: 2;
+            width:1248px;
         }
         .main-screen-inner-first-section{                           
-            max-width: 872px;               
+            //max-width: 872px;  
+            width: 100%;             
             margin-right: 24px;  
             a{
                 text-decoration: none;
@@ -507,6 +519,90 @@ body{
 
 }
 
+.header{
+    font-family: Roboto;
+   /*  a{
+        color: #6E7178;
+    } */
+}
+
+.timer-div{
+    @include SetborderAndBColor();
+    display: flex;
+    
+    
+    height: 100%;
+    width: 100%;
+    padding-top:16px;
+    padding-left: 16px;
+    .timer-div-content{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        span{
+            margin-bottom: 16px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #2D2F33;
+
+        }
+        
+    }
+}
+
+.main-main-screen{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .main-screen{
+        display: flex;
+        
+    }
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    span{
+        color: #2375E1;
+    }
+    
+    border-bottom:3px solid #2375E1;
+}
 
 
 
+///// map section
+
+.map-container{
+    @include SetborderAndBColor();
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    .map-container-div{
+        flex-shrink: 1; 
+        width: 100%;           
+        span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 16px;
+        }
+        .the-map{
+            margin-top: 16px;
+        }
+    }
+}
+.active{
+    border-bottom: 3px solid #2375E1;
+    color: #2375E1;
+    padding: 9px;
+    span{
+        color: #2375E1;
+    }
+}

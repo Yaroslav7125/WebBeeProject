@@ -81,4 +81,3 @@ function countTime(){
     showTime();
 }
 document.addEventListener("DOMContentLoaded", startTimer);
-showTime(); // при переходе должен быть запущен таймер

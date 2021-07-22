@@ -33,7 +33,13 @@
   display: flex;
   font-family: Roboto;
   text-decoration: none;
+  padding: 9px;
+  color: #6E7178;
+  /* img{
+      margin-right: 8px;
+  } */
 }
+
 .header-part-3img {
   margin-left: 24px;
   margin-right: 20px;
@@ -57,16 +63,7 @@
   margin-left: 8px;
 }
 
-.sc-section-hr-img1 {
-  margin-left: 32px;
-}
-
-.sc-section-hr-img2 {
-  margin-left: 18px;
-}
-
 .sc-section-hr-img3 {
-  margin-left: 19px;
   width: 16px;
   height: 20px;
 }
@@ -453,9 +450,9 @@ body .main-screen .personal-data-lastSection .pdlsc-input textarea {
 
 .header {
   font-family: Roboto;
-}
-.header a {
-  color: #6E7178;
+  /*  a{
+       color: #6E7178;
+   } */
 }
 
 .timer-div {
@@ -495,8 +492,10 @@ a {
 }
 
 a:hover {
-  color: #2375E1;
   border-bottom: 3px solid #2375E1;
+}
+a:hover span {
+  color: #2375E1;
 }
 
 .map-container {
@@ -520,6 +519,15 @@ a:hover {
 }
 .map-container .map-container-div .the-map {
   margin-top: 16px;
+}
+
+.active {
+  border-bottom: 3px solid #2375E1;
+  color: #2375E1;
+  padding: 9px;
+}
+.active span {
+  color: #2375E1;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -40,10 +40,11 @@
             display: flex;
             font-family: Roboto;
             text-decoration: none;
-            .span{
-                
-               
-            }
+            padding:9px;
+            color: #6E7178;
+            /* img{
+                margin-right: 8px;
+            } */
         }
     
     
@@ -70,14 +71,10 @@
        margin-left: 8px;
    }
 }
-.sc-section-hr-img1{
-    margin-left: 32px;
-}
-.sc-section-hr-img2{
-margin-left: 18px;
-}
+
+
 .sc-section-hr-img3{
-    margin-left: 19px; 
+     
     width: 16px;
     height: 20px;
 }
@@ -524,9 +521,9 @@ body{
 
 .header{
     font-family: Roboto;
-    a{
+   /*  a{
         color: #6E7178;
-    }
+    } */
 }
 
 .timer-div{
@@ -569,7 +566,10 @@ a{
 
 }
 a:hover{
-    color: #2375E1;
+    span{
+        color: #2375E1;
+    }
+    
     border-bottom:3px solid #2375E1;
 }
 
@@ -596,5 +596,13 @@ a:hover{
         .the-map{
             margin-top: 16px;
         }
+    }
+}
+.active{
+    border-bottom: 3px solid #2375E1;
+    color: #2375E1;
+    padding: 9px;
+    span{
+        color: #2375E1;
     }
 }

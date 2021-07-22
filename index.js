@@ -73,12 +73,12 @@ showTime = function(){
     let hoursStr = String(Math.trunc(sec/3600)).padStart(2, '0');
     timer.innerHTML =  `${hoursStr}:${minutesStr}:${secStr}`;   
 }
-function Timer(){
+function startTimer(){
     let timerId = setInterval(()=> /* showTime() */countTime(), 1000);
 }
 function countTime(){
     sec++;
     showTime();
 }
-document.addEventListener("DOMContentLoaded", Timer);
+document.addEventListener("DOMContentLoaded", startTimer);
 showTime(); // при переходе должен быть запущен таймер

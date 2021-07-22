@@ -17,7 +17,7 @@ let makeGetRequest = (uri, cb) =>{
 function GetContent(path){
     switch(path){
          case '/':
-            makeGetRequest(`${location.origin}/templates${path}activity.html`, (data) => showContent(data));
+            makeGetRequest(`${location.origin}/templates/activity.html`, (data) => showContent(data));
             break; 
         case '/map.html':
             makeGetRequest(`${location.origin}/templates${path}`, (data) => {

@@ -1,5 +1,6 @@
-const divElem = document.querySelector(".nav"); // navbar в котором находятся ссылки content = document.getElementById('content') // div элемент куда вставляется контент
-const ShowContent = data => {
+const divElem = document.querySelector(".nav"); // navbar в котором находятся ссылки
+const showContent = data => {
+    const content = document.getElementById('content'); // div элемент куда вставляется контент
     content.innerHTML = data;
     showTime();
 }
@@ -17,11 +18,11 @@ let flag = false;
 function GetContent(ThePath){
     switch(ThePath){
          case '/':
-            makeGetRequest(`${location.origin}/templates${ThePath}activity.html`, (data) => ShowContent(data));
+            makeGetRequest(`${location.origin}/templates${ThePath}activity.html`, (data) => showContent(data));
             break; 
         case '/map.html':
             makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => {
-                ShowContent(data); // тогда вызываем функцию myFunction
+                showContent(data); // тогда вызываем функцию myFunction
                 DG.then(function() {
                     map = DG.map('map', {
                         'center': [54.98, 82.89],
@@ -38,10 +39,10 @@ function GetContent(ThePath){
             break;
         case '/activity.html':
             //history.pushState(null, null, ThePath)
-            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => ShowContent(data));
+            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => showContent(data));
             break;
         case '/time.html':
-            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => ShowContent(data));
+            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => showContent(data));
             break;    
     };  
     

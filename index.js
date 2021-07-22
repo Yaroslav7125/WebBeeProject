@@ -14,14 +14,13 @@ let makeGetRequest = (uri, cb) =>{
         }
     }
 }
-let flag = false;
-function GetContent(ThePath){
-    switch(ThePath){
+function GetContent(path){
+    switch(path){
          case '/':
-            makeGetRequest(`${location.origin}/templates${ThePath}activity.html`, (data) => showContent(data));
+            makeGetRequest(`${location.origin}/templates${path}activity.html`, (data) => showContent(data));
             break; 
         case '/map.html':
-            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => {
+            makeGetRequest(`${location.origin}/templates${path}`, (data) => {
                 showContent(data); // тогда вызываем функцию myFunction
                 DG.then(function() {
                     map = DG.map('map', {
@@ -38,11 +37,10 @@ function GetContent(ThePath){
             });
             break;
         case '/activity.html':
-            //history.pushState(null, null, ThePath)
-            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => showContent(data));
+            makeGetRequest(`${location.origin}/templates${path}`, (data) => showContent(data));
             break;
         case '/time.html':
-            makeGetRequest(`${location.origin}/templates${ThePath}`, (data) => showContent(data));
+            makeGetRequest(`${location.origin}/templates${path}`, (data) => showContent(data));
             break;    
     };  
     

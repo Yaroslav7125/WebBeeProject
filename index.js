@@ -1,6 +1,3 @@
-function getPath(str){
-    return str.split('/')[str.split('/').length-1];
-}
 divElem = document.querySelector(".nav"); // navbar в котором находятся ссылки
 content = document.getElementById('content') // div элемент куда вставляется контент
 const ShowContent = data => {

@@ -69,8 +69,8 @@ showTime = function(){
     let timer = document.getElementById('timer');
     if (timer == null)return;
     let secStr = String(sec%60).padStart(2, '0');
-    let hoursStr = String(Math.trunc(sec/3600)).padStart(2, '0');
     let minutesStr = String(Math.trunc(sec/60)).padStart(2, '0');
+    let hoursStr = String(Math.trunc(sec/3600)).padStart(2, '0');
     timer.innerHTML =  `${hoursStr}:${minutesStr}:${secStr}`;   
 }
 function Timer(){

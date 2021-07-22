@@ -1,5 +1,4 @@
-divElem = document.querySelector(".nav"); // navbar в котором находятся ссылки
-content = document.getElementById('content') // div элемент куда вставляется контент
+const divElem = document.querySelector(".nav"); // navbar в котором находятся ссылки content = document.getElementById('content') // div элемент куда вставляется контент
 const ShowContent = data => {
     content.innerHTML = data;
     showTime();

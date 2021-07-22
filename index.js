@@ -14,7 +14,7 @@ let makeGetRequest = (uri, cb) =>{
         }
     }
 }
-function GetContent(path){
+function getContent(path){
     switch(path){
          case '/':
             makeGetRequest(`${location.origin}/templates/activity.html`, (data) => showContent(data));
@@ -45,7 +45,7 @@ function GetContent(path){
     };  
     
 }
-GetContent(location.pathname);
+getContent(location.pathname);
 
 let links = document.querySelectorAll(".actions-href");
 links.forEach((elm)=> {
@@ -57,11 +57,11 @@ links.forEach((elm)=> {
         });
         elm.classList.add('active');
         history.pushState(null, null, path);
-        GetContent(path);  
+        getContent(path);  
     })
 });
 window.addEventListener('popstate',function(){
-    GetContent(location.pathname); 
+    getContent(location.pathname); 
 });
 //timer
 let sec = 0;
